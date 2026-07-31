@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit a concern — Pacific Voice</title>
+<meta name="description" content="Raise a concern about unethical activity that has harmed your community in the Pacific. Reviewed by a lawyer in your country. Free and confidential.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-submit">
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">Pacific Voice</span>
+      <span class="brand-tagline">A way to be heard</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#how">How it works</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Form -->
+<main class="form-page">
+  <div class="container form-container">
+
+    <!-- Intro -->
+    <div class="form-intro">
+      <span class="label-kicker">SUBMIT A CONCERN</span>
+      <h1 class="form-title">Tell us what happened.</h1>
+      <p class="form-lede">
+        This form takes about ten minutes. Submit what you know, even if some answers are missing. A PLN lawyer in your country will review it and contact you within 30 days.
+      </p>
+      <div class="form-promises">
+        <div class="promise">
+          <div class="promise-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <span><strong>Confidential.</strong> Your information stays with us.</span>
+        </div>
+        <div class="promise">
+          <div class="promise-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <span><strong>30-day response.</strong> We reply to every submission.</span>
+        </div>
+        <div class="promise">
+          <div class="promise-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <span><strong>Free.</strong> Submitting commits you to nothing.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- The form itself -->
+    <form id="concern-form" class="concern-form" novalidate>
+
+      <fieldset class="form-section">
+        <legend class="form-legend">
+          <span class="legend-number">01</span>
+          <span class="legend-text">About you</span>
+        </legend>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="first-name">First name <span class="optional">(optional)</span></label>
+            <input type="text" id="first-name" name="first_name" autocomplete="given-name">
+          </div>
+          <div class="field">
+            <label for="last-name">Last name <span class="optional">(optional)</span></label>
+            <input type="text" id="last-name" name="last_name" autocomplete="family-name">
+          </div>
+        </div>
+        <p class="hint">You can submit anonymously. Giving your name helps us assess and act on your concern faster.</p>
+
+        <div class="field">
+          <label for="postal">Postal address <span class="optional">(optional)</span></label>
+          <input type="text" id="postal" name="postal" autocomplete="street-address" placeholder="Village, PO box, or street address">
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="country">Your country <span class="required">*</span></label>
+            <select id="country" name="country" required>
+              <option value="">Select a country</option>
+              <option>Australia</option>
+              <option>Cook Islands</option>
+              <option>Federated States of Micronesia</option>
+              <option>Fiji</option>
+              <option>French Polynesia</option>
+              <option>Guam</option>
+              <option>Hawaii</option>
+              <option>Indonesia</option>
+              <option>Kiribati</option>
+              <option>Marshall Islands</option>
+              <option>New Caledonia</option>
+              <option>New Zealand</option>
+              <option>Northern Mariana Islands</option>
+              <option>Palau</option>
+              <option>Papua New Guinea</option>
+              <option>Samoa</option>
+              <option>Singapore</option>
+              <option>Solomon Islands</option>
+              <option>Timor Leste</option>
+              <option>Tonga</option>
+              <option>Vanuatu</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="role">Your role <span class="optional">(optional)</span></label>
+            <select id="role" name="role">
+              <option value="">Select a role</option>
+              <option>Community member</option>
+              <option>Traditional leader or chief</option>
+              <option>Landowner</option>
+              <option>Government official</option>
+              <option>NGO or community organisation</option>
+              <option>Lawyer or legal representative</option>
+              <option>Journalist or researcher</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="email">Email <span class="optional">(or phone below)</span></label>
+            <input type="email" id="email" name="email" autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="phone">Phone <span class="optional">(or email above)</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+        </div>
+        <p class="hint">We need at least one way to contact you.</p>
+      </fieldset>
+
+      <fieldset class="form-section">
+        <legend class="form-legend">
+          <span class="legend-number">02</span>
+          <span class="legend-text">What happened</span>
+        </legend>
+
+        <div class="field">
+          <label for="claim-type">What kind of harm is this? <span class="required">*</span></label>
+          <select id="claim-type" name="claim_type" required>
+            <option value="">Select the closest match</option>
+            <option>Oil or chemical spill</option>
+            <option>Mining damage</option>
+            <option>Logging damage</option>
+            <option>Fishing or marine damage</option>
+            <option>Land clearing or trespass on customary land</option>
+            <option>Water or soil contamination</option>
+            <option>A broken or unfair commercial agreement</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="description">In your own words, what happened? <span class="required">*</span></label>
+          <textarea id="description" name="description" rows="6" required placeholder="Tell us what you know. Don't worry about legal language."></textarea>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="when">When did it happen?</label>
+            <input type="text" id="when" name="when" placeholder="A date, a month, or a period of time">
+          </div>
+          <div class="field">
+            <label for="where">Where did it happen?</label>
+            <input type="text" id="where" name="where" placeholder="Village, province, island or area">
+          </div>
+        </div>
+
+        <div class="field">
+          <fieldset class="checkbox-group">
+            <legend>Who or what was affected? <span class="optional">(tick any that apply)</span></legend>
+            <label class="checkbox-label">
+              <input type="checkbox" name="affected" value="people">
+              <span>People or their health</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="affected" value="land">
+              <span>Land or forest</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="affected" value="water">
+              <span>Rivers, groundwater or drinking water</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="affected" value="reef">
+              <span>Reef, sea or fishing grounds</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="affected" value="crops">
+              <span>Crops, gardens or livestock</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="affected" value="cultural">
+              <span>Cultural or sacred sites</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="affected" value="other">
+              <span>Something else (describe above)</span>
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="responsible-type">Who is responsible? <span class="optional">(best guess)</span></label>
+            <select id="responsible-type" name="responsible_type">
+              <option value="">Select one</option>
+              <option>A foreign company</option>
+              <option>A local company</option>
+              <option>A government body</option>
+              <option>An individual</option>
+              <option>More than one of these</option>
+              <option>I don't know</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="responsible">Their name, if known</label>
+            <input type="text" id="responsible" name="responsible" placeholder="Company or organisation name">
+          </div>
+        </div>
+        <p class="hint">If you're not sure who is responsible, leave this blank. We can investigate.</p>
+      </fieldset>
+
+      <fieldset class="form-section">
+        <legend class="form-legend">
+          <span class="legend-number">03</span>
+          <span class="legend-text">Loss and damage</span>
+        </legend>
+
+        <div class="field">
+          <label for="quantum">If you had to estimate the value of the loss, what would it be?</label>
+          <select id="quantum" name="quantum">
+            <option value="">Select a range</option>
+            <option>Under USD 100,000</option>
+            <option>USD 100,000 – 1 million</option>
+            <option>USD 1 – 10 million</option>
+            <option>Over USD 10 million</option>
+            <option>I can't estimate it</option>
+          </select>
+          <p class="hint">Don't worry if you can't. A description of the damage below is just as useful.</p>
+        </div>
+
+        <div class="field">
+          <fieldset class="checkbox-group">
+            <legend>What does the damage look like? <span class="optional">(tick any that apply)</span></legend>
+            <label class="checkbox-label">
+              <input type="checkbox" name="damage_scope" value="cannot_fish">
+              <span>People can no longer fish or gather food</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="damage_scope" value="water_unusable">
+              <span>Water is unsafe to drink or use</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="damage_scope" value="land_unusable">
+              <span>Land or gardens can no longer be used</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="damage_scope" value="pollution_visible">
+              <span>Visible pollution (oil on beaches, dead fish, cleared forest)</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="damage_scope" value="income_lost">
+              <span>People have lost income or livelihoods</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="damage_scope" value="health">
+              <span>People have become sick</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="damage_scope" value="displacement">
+              <span>People have had to leave their homes or land</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="damage_scope" value="other">
+              <span>Something else</span>
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="field">
+          <label for="damage-other">Anything else about the damage? <span class="optional">(optional)</span></label>
+          <textarea id="damage-other" name="damage_other" rows="3" placeholder="Describe the damage in your own words if the options above don't cover it."></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-section">
+        <legend class="form-legend">
+          <span class="legend-number">04</span>
+          <span class="legend-text">What's been done so far</span>
+        </legend>
+
+        <div class="field">
+          <fieldset class="checkbox-group">
+            <legend>Have you discussed this with anyone else? <span class="optional">(tick any that apply)</span></legend>
+            <label class="checkbox-label">
+              <input type="checkbox" name="discussed_with" value="ngo">
+              <span>A non-government organisation</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="discussed_with" value="government">
+              <span>A government body or politician</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="discussed_with" value="lawyer">
+              <span>Another lawyer</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="discussed_with" value="church">
+              <span>A church or faith leader</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="discussed_with" value="media">
+              <span>Media or journalists</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="discussed_with" value="none">
+              <span>I have not discussed this with anyone</span>
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="field">
+          <fieldset class="checkbox-group">
+            <legend>What evidence do you have? <span class="optional">(tick any that apply)</span></legend>
+            <label class="checkbox-label">
+              <input type="checkbox" name="evidence" value="photos">
+              <span>Photos or videos</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="evidence" value="documents">
+              <span>Documents or letters</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="evidence" value="contracts">
+              <span>Contracts, agreements or insurance papers</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="evidence" value="witnesses">
+              <span>People who saw what happened</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="evidence" value="reports">
+              <span>Scientific or government reports</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="evidence" value="traditional">
+              <span>Traditional knowledge records</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="evidence" value="none">
+              <span>Nothing yet</span>
+            </label>
+          </fieldset>
+          <p class="hint">You don't need to upload anything now. A lawyer will arrange this with you.</p>
+        </div>
+
+        <div class="field upload-field">
+          <label>Attach documents or photos <span class="optional">(optional)</span></label>
+          <div class="upload-box">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            <p><strong>Drag and drop files here</strong></p>
+            <p class="upload-hint">or <a href="#" onclick="event.preventDefault()">choose files</a></p>
+            <p class="upload-note">Photos, PDFs, audio. Up to 25 MB total.</p>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-section">
+        <legend class="form-legend">
+          <span class="legend-number">05</span>
+          <span class="legend-text">Before you send</span>
+        </legend>
+
+        <div class="consent-block">
+          <label class="checkbox-label consent">
+            <input type="checkbox" name="consent_review" required>
+            <span>I understand that submitting this form does not commit me to take legal action, and that a PLN lawyer will review and contact me.</span>
+          </label>
+          <label class="checkbox-label consent">
+            <input type="checkbox" name="consent_confidential" required>
+            <span>I understand my information will be kept confidential and not shared without my consent.</span>
+          </label>
+          <label class="checkbox-label consent">
+            <input type="checkbox" name="consent_safety">
+            <span>I am submitting this voluntarily. <em>If you are in immediate physical danger, please contact local emergency services. This form is not monitored 24 hours.</em></span>
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn-lg">
+          <span>Submit my concern</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <p class="submit-note">You will see a confirmation on the next page.</p>
+      </div>
+
+    </form>
+
+    <!-- Success state (hidden by default) -->
+    <div id="success" class="success-state" hidden>
+      <div class="success-icon">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </div>
+      <h2 class="success-title">Thank you. Your concern has been received.</h2>
+      <p class="success-body">
+        A PLN lawyer in your country will review your submission and contact you within 30 days. We will use the contact details you provided. If we have any questions before then, we will contact you sooner.
+      </p>
+      <p class="success-body">
+        Your submission reference is <strong id="reference-number">PV-2026-•••••</strong>. Keep this for your records.
+      </p>
+      <div class="success-actions">
+        <a href="index.html" class="btn btn-ghost">Return to home</a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-bottom-only">
+    <p>&copy; 2026 Pacific Legal Network. Pacific Voice is a service of PLN. <a href="index.html">Return to home</a>.</p>
+  </div>
+</footer>
+
+<script src="form.js"></script>
+</body>
+</html>
